@@ -1,5 +1,7 @@
 # DaisyUi
 
+[![.github/workflows/ci.yml](https://github.com/luhagel/daisy_ui/actions/workflows/ci.yml/badge.svg)](https://github.com/luhagel/daisy_ui/actions/workflows/ci.yml)
+
 DaisyUI component library for Phoenix LiveView
 
 Early WIP, don't use it yet.
@@ -36,4 +38,3 @@ Add a `use DaisyUi` to your LiveView component or directly in your liveview macr
 ```
 
 The docs can be found at <https://hexdocs.pm/daisy_ui>.
-
