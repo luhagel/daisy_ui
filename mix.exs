@@ -20,8 +20,14 @@ defmodule DaisyUi.MixProject do
         main: "readme",
         logo: "priv/static/daisyui.png",
         extras: ["README.md", "LICENSE.txt"],
-        groups_for_functions: [
-          "Data Input": &(&1[:section] == :data_input)
+        groups_for_docs: [
+          Actions: &(&1[:section] == :actions),
+          "Data Display": &(&1[:section] == :data_display),
+          Navigation: &(&1[:section] == :navigation),
+          Feedback: &(&1[:section] == :user_feedback),
+          "Data Input": &(&1[:section] == :data_input),
+          Layout: &(&1[:section] == :layout),
+          Mockup: &(&1[:section] == :mockup)
         ]
       ],
       package: package()
@@ -50,11 +56,9 @@ defmodule DaisyUi.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
-      {:ex_doc, "~> 0.31", only: :dev, runtime: false},
-      {:phoenix_html, "~> 3.3"},
-      {:phoenix_live_view, "~> 0.19"}
+      {:ex_doc, "~> 0.32", only: :dev, runtime: false},
+      {:phoenix_html, "~> 4.0"},
+      {:phoenix_live_view, "~> 0.20"}
     ]
   end
 

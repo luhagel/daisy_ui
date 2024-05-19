@@ -23,8 +23,11 @@ end
 
 Add a `use DaisyUi` to your LiveView component or directly in your liveview macro.
 
+in `libs/your_app_web.ex`
+
 ```elixir
-  # libs/your_app_web.ex
+  ...
+
   def live_view do
     quote do
       use Phoenix.LiveView,
@@ -35,6 +38,8 @@ Add a `use DaisyUi` to your LiveView component or directly in your liveview macr
       unquote(html_helpers())
     end
   end
+
+  ...
 ```
 
 The docs can be found at <https://hexdocs.pm/daisy_ui>.
