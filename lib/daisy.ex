@@ -1,7 +1,7 @@
-defmodule DaisyUi do
+defmodule Daisy do
   @moduledoc ~S"""
   <p>
-  An implementation of <a href="https://daisyui.com" target="blank">DaisyUI</a> for Phoenix LiveView.
+  An implementation of <a href="https://daisyui.com" target="blank">DaisyUI</a> `5` for Phoenix LiveView.
   </p>
 
   <p>

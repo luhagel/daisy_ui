@@ -1,10 +1,10 @@
-defmodule DaisyUi.MixProject do
+defmodule Daisy.MixProject do
   use Mix.Project
 
   def project do
     [
       app: :daisy_ui,
-      version: "0.1.1",
+      version: "0.2.0",
       elixir: "~> 1.16",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -56,9 +56,11 @@ defmodule DaisyUi.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.32", only: :dev, runtime: false},
-      {:phoenix_html, "~> 4.0"},
-      {:phoenix_live_view, "~> 0.20"}
+      {:phoenix, "~> 1.7.19"},
+      {:ex_doc, "~> 0.36", only: :dev, runtime: false},
+      {:phoenix_live_view, "~> 1.0"},
+      {:phoenix_storybook, "~> 0.8"},
+      {:gettext, "~> 0.26", optional: true}
     ]
   end
 
