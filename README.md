@@ -2,6 +2,8 @@
 
 [![.github/workflows/ci.yml](https://github.com/luhagel/daisy_ui/actions/workflows/ci.yml/badge.svg)](https://github.com/luhagel/daisy_ui/actions/workflows/ci.yml)
 
+## This repo has been archived in favour of the official implmentation arriving with Phoenix 1.8
+
 DaisyUI component library for Phoenix LiveView
 
 Early WIP, don't use it yet.
